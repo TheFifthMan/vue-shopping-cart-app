@@ -24,7 +24,7 @@ app.get('/productLists',(req,res) => {
      res.json(productLists);   
     })
 })
-app.get('/carLists',(req,res) => {
+app.get('/cartLists',(req,res) => {
     fs.readFile(CARTLIST,(err,data) => {
         const cartLists = JSON.parse(data);
         res.json(cartLists);
